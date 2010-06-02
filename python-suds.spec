@@ -9,6 +9,7 @@ Group:		Development/Languages/Python
 Source0:	https://fedorahosted.org/releases/s/u/suds/%{name}-%{version}.tar.gz
 # Source0-md5:	420ac4b6ba788e43631b74719a470bf7
 URL:		https://fedorahosted.org/suds/
+BuildRequires:	python-devel
 BuildRequires:	python-distribute
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
