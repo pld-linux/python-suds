@@ -2,12 +2,12 @@
 Summary:	Python SOAP client library
 Summary(pl.UTF-8):	Biblioteka klienta SOAP dla języka Python.
 Name:		python-%{module}
-Version:	0.4
+Version:	0.4.1
 Release:	1
 License:	GPL v3
 Group:		Development/Languages/Python
 Source0:	https://fedorahosted.org/releases/s/u/suds/%{name}-%{version}.tar.gz
-# Source0-md5:	05523dfd3fc0de3f19dde4aca5dd17e9
+# Source0-md5:	95a2f04378931e973cbb3cca8f8d9765
 URL:		https://fedorahosted.org/suds/
 BuildRequires:	python-devel
 BuildRequires:	python-distribute
