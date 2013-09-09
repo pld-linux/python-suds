@@ -1,6 +1,6 @@
 %define 	module	suds
 Summary:	Python SOAP client library
-Summary(pl.UTF-8):	Biblioteka klienta SOAP dla języka Python.
+Summary(pl.UTF-8):	Biblioteka klienta SOAP dla języka Python
 Name:		python-%{module}
 Version:	0.4.1
 Release:	1
