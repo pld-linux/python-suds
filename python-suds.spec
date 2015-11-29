@@ -12,7 +12,7 @@ URL:		https://fedorahosted.org/suds/
 BuildRequires:	python-devel
 BuildRequires:	python-distribute
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 Requires:	python-PyXML
 Requires:	python-libs
 Requires:	python-modules
