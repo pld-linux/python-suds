@@ -58,6 +58,7 @@ topdir=$(pwd)
 %if %{with python2}
 %py_build
 
+PYTHONIOENCODING=utf-8 \
 PYTHONPATH=$(pwd)/build-2/lib \
 %{__python} -m pytest tests
 %endif
