@@ -60,8 +60,6 @@ topdir=$(pwd)
 %if %{with python2}
 %py_build
 
-#export LC_ALL=C.UTF-8 PYTHONIOENCODING=utf-8
-
 PYTHONPATH=$(pwd)/build-2/lib \
 %{__python} -m pytest tests
 %endif
