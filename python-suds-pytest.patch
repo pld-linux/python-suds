@@ -1,0 +1,23 @@
+tests/test_xsd_builtins.py:165
+  tests/test_xsd_builtins.py:165: RemovedInPytest4Warning: Applying marks directly to parameters is deprecated, please use pytest.param(..., marks=...) instead.  For more details, see: https://docs.pytest.org/en/latest/parametrize.html
+    @pytest.mark.parametrize("source", (
+  tests/test_xsd_builtins.py:165: RemovedInPytest4Warning: Applying marks directly to parameters is deprecated, please use pytest.param(..., marks=...) instead.  For more details, see: https://docs.pytest.org/en/latest/parametrize.html
+    @pytest.mark.parametrize("source", (
+
+--- suds-0.8.4/tests/test_xsd_builtins.py.orig	2019-12-21 17:42:34.000000000 +0100
++++ suds-0.8.4/tests/test_xsd_builtins.py	2020-03-26 18:04:05.338252432 +0100
+@@ -164,10 +164,10 @@
+ 
+     @pytest.mark.parametrize("source", (
+         None,
+-        pytest.mark.skipif(sys.version_info >= (3,),
+-            reason="int == long since Python 3.0")(long(0)),
+-        pytest.mark.skipif(sys.version_info >= (3,),
+-            reason="int == long since Python 3.0")(long(1)),
++        pytest.param(long(0), marks=pytest.mark.skipif(sys.version_info >= (3,),
++                                    reason="int == long since Python 3.0")),
++        pytest.param(long(1), marks=pytest.mark.skipif(sys.version_info >= (3,),
++                                    reason="int == long since Python 3.0")),
+         "x",
+         "True",
+         "False",

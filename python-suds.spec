@@ -14,6 +14,7 @@ Group:		Development/Languages/Python
 #Source0Download: https://github.com/suds-community/suds/releases
 Source0:	https://github.com/suds-community/suds/archive/v%{version}/suds-%{version}.tar.gz
 # Source0-md5:	d4c47fec087d81f9a02f70bcc48c92c4
+Patch0:		%{name}-pytest.patch
 URL:		https://github.com/suds-community/suds
 %if %{with python2}
 BuildRequires:	python-devel >= 1:2.4
@@ -52,13 +53,14 @@ Suds to lekka implementacja klienta SOAP dla języka Python.
 
 %prep
 %setup -q -n suds-%{version}
+%patch0 -p1
 
 %build
 topdir=$(pwd)
 %if %{with python2}
 %py_build
 
-export LC_ALL=C.UTF-8 PYTHONIOENCODING=utf-8
+#export LC_ALL=C.UTF-8 PYTHONIOENCODING=utf-8
 
 PYTHONPATH=$(pwd)/build-2/lib \
 %{__python} -m pytest tests
