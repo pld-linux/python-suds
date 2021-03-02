@@ -8,7 +8,7 @@ Summary:	Python 2 SOAP client library
 Summary(pl.UTF-8):	Biblioteka klienta SOAP dla Pythona 2
 Name:		python-suds
 Version:	0.8.4
-Release:	1
+Release:	2
 License:	LGPL v3+
 Group:		Development/Languages/Python
 #Source0Download: https://github.com/suds-community/suds/releases
